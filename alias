@@ -1,4 +1,8 @@
+# Core
+base="~/Simple-Developer-Alias"
+
 # Alias Install
+alias install-magerun="cd $base; cd tools;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/"
 alias install-magento="bash ./Magento/magento-install.sh"
 
 # Alias Tools
