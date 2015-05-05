@@ -2,8 +2,8 @@
 alias install-magento="bash ./Magento/magento-install.sh"
 
 # Alias Tools
-alias magerun="~/Simple-Developer-Alias/Tools/n98-magerun.phar"
-alias modgit="~/Simple-Developer-Alias/Tools/modgit"
+alias magerun="./Tools/n98-magerun.phar"
+alias modgit="./Tools/modgit"
 
 # Alias Git
 alias gitst="clear;git status"
