@@ -6,6 +6,7 @@ alias magerun="~/Simple-Developer-Alias/Tools/n98-magerun.phar"
 alias modgit="~/Simple-Developer-Alias/Tools/modgit"
 
 # Alias Git
+alias gitst="clear;git status"
 alias limpa="git clean -df;git checkout -- . ;git pull --all;clear;git status; rm -rf var/cache/*"
 
 # Alias Develop
