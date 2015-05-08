@@ -1,0 +1,9 @@
+# Alias Install
+alias install-magento="bash ~/htdocs/Tools/Magento/magento-install.sh"
+
+# Alias Tools
+alias n98="~/Simple-Developer-Alias/Tools/n98-magerun.phar"
+alias modgit="~/Simple-Developer-Alias/Tools/modgit"
+
+# Alias Git
+alias limpa="git reset HEAD; git clean -df;git checkout -- . ;git pull --all;clear;git status; rm -rf var/cache/*"
