@@ -11,7 +11,7 @@ alias modgit="./tools/modgit"
 
 # Alias Git
 alias gitst="clear;git status"
-alias limpa="git clean -df;git checkout -- . ;git pull --all;clear;git status; rm -rf var/cache/*"
+alias limpa="git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean;git status; rm -rf var/cache/*"
 
 # Alias System
 alias 777="chmod -Rv 777"
