@@ -13,6 +13,12 @@ alias gitst="clear;git status"
 alias limpa="git reset --hard; git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean;git status; 
 rm -rf var/cache/*"
 
+# Alias Magerun
+alias n98="magerun"
+alias nt="n98 dev:template-hints"
+alias nc="n98 cache:clean;n98 cache:flush"
+alias nr="n98 index:reindex:all"
+
 # Alias System
 alias 777="chmod -Rv 777"
 alias 755="chmod -Rv 755"
