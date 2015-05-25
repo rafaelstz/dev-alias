@@ -6,8 +6,8 @@ alias install-magerun="cd $base;mkdir tools; cd tools;wget https://raw.githubuse
 alias install-magento="bash ./Magento/magento-install.sh"
 
 # Alias Tools
-alias magerun="./tools/n98-magerun.phar"
-alias modgit="./tools/modgit"
+alias magerun="$base/tools/n98-magerun.phar"
+alias modgit="$base/tools/modgit"
 
 # Alias Git
 alias gitst="clear;git status"
