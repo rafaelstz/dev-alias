@@ -1,8 +1,10 @@
 # Core
-base="~/Simple-Developer-Alias"
+base="~/Dev-Alias"
 
 # Alias Install
+alias install-devAlias="cd $base; limpa;clear;echo READY =];cd ~/"
 alias install-magerun="cd $base;mkdir tools; cd tools;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/;clear;echo READY =];cd ~/"
+alias install-modgit="cd $base;mkdir tools; cd tools;wget -O modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x modgit; sudo mv modgit /usr/local/bin;clear;echo READY =];cd ~/"
 
 # Alias Tools
 alias magerun="$base/tools/n98-magerun.phar"
@@ -10,7 +12,7 @@ alias modgit="$base/tools/modgit"
 
 # Alias Git
 alias gitst="clear;git status"
-alias limpa="git reset --hard; git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean;git status; 
+alias limpa="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean;git status; 
 rm -rf var/cache/*"
 
 # Alias Magerun
