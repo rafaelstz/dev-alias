@@ -1,5 +1,5 @@
 # Core
-base="~/Dev-Alias"
+base="~/dev-alias"
 
 # Alias Install
 alias install-devAlias="cd $base; limpa;clear;echo READY =];cd ~/"
