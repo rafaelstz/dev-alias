@@ -12,7 +12,7 @@ alias modgit="$base/tools/modgit"
 
 # Alias Git
 alias gitst="clear;git status"
-alias limpa="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean; rm -rf var/cache/*;clear;git status;"
+alias limpa="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean; rm -rf var/cache/*;clear;git status"
 
 # Alias Magerun
 alias n98="magerun"
