@@ -1,5 +1,6 @@
 # Core
 base="~/dev-alias"
+logview="5"
 
 # Alias Install
 alias install-devAlias="cd $base; limpa;clear;echo READY =];cd ~/"
@@ -13,6 +14,8 @@ alias modgit="$base/tools/modgit"
 # Alias Git
 alias gitst="clear;git status"
 alias limpa="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;clear; magerun index:reindex:all;magerun cache:flush;magerun cache:clean; rm -rf var/cache/*;clear;git status"
+alias last="git log $logview --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias lastg="git log $logview --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # Alias Magerun
 alias n98="magerun"
