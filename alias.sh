@@ -4,8 +4,8 @@ logview="5"
 
 # Alias Install
 alias install-devAlias="cd $base; limpa;clear;echo READY =];cd ~/"
-alias install-magerun="cd $base;mkdir tools; cd tools;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/;clear;cd ~/"
-alias install-modgit="cd $base;mkdir tools; cd tools;wget -O modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x modgit; cp modgit /usr/local/bin/;clear;cd ~/"
+alias install-magerun="cd $base;mkdir tools; cd tools; rm n98-magerun.phar;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/;clear;cd ~/"
+alias install-modgit="cd $base;mkdir tools; cd tools;rm modgit;wget -O modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x modgit; cp modgit /usr/local/bin/;clear;cd ~/"
 
 # Alias Tools
 alias magerun="$base/tools/n98-magerun.phar"
