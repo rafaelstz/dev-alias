@@ -1,5 +1,5 @@
 # Core
-base="~/dev-alias"
+base="~/.dev-alias"
 logview="5"
 
 # Alias Install
