@@ -3,7 +3,7 @@ base="~/.dev-alias"
 logview="5"
 
 # Alias Upgrade
-alias upgrade-devalias="cd $base;rm master.zip;wget https://github.com/rafaelstz/dev-alias/archive/master.zip;unzip -qo master.zip;mv dev-alias-master/* ./;rm -rf dev-alias-master;rm master.zip; source ~/.bashrc; source ~/.zshrc; clear"
+alias upgrade-devalias="cd $base;rm master.zip;wget https://github.com/rafaelstz/dev-alias/archive/master.zip;unzip -qo master.zip;mv dev-alias-master/* ./;rm -rf dev-alias-master;rm master.zip; source ~/.bashrc; source ~/.zshrc; clear; cd ~/"
 
 # Alias Install
 alias install-magerun="cd $base;mkdir tools; cd tools; rm n98-magerun.phar;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/;clear;cd ~/"
