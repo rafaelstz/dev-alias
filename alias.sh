@@ -25,7 +25,7 @@ alias nc="n98 cache:clean;n98 cache:flush"
 alias nr="n98 index:reindex:all"
 
 # Alias System
-alias www="cd /var/www/html/"
+alias www="clear; cd /var/www/html/; ls -lh;"
 alias 777="chmod -Rv 777"
 alias 755="chmod -Rv 755"
 alias 644="chmod -Rv 644"
