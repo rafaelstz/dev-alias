@@ -12,6 +12,7 @@
   mv dev-alias-master/* ./
   rm -rf dev-alias-master
   rm master.zip
+  cd ~/
 ```
 
 Paste this code in the first line of your **~/.bashrc**
