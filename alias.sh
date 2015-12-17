@@ -7,6 +7,7 @@ alias upgrade-devalias="cd $base;rm master.zip;wget https://github.com/rafaelstz
 
 # Alias Install
 alias install-magerun="cd $base;mkdir tools; cd tools; rm n98-magerun.phar;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/;clear;cd ~/"
+alias install-magerun-addon="mkdir -p ~/.n98-magerun/modules/; cd ~/.n98-magerun/modules/ && git clone git@github.com:peterjaap/magerun-addons.git"
 alias install-modgit="cd $base;mkdir tools; cd tools;rm modgit;wget -O modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x modgit; cp modgit /usr/local/bin/;clear;cd ~/"
 alias install-composer="cd $base;mkdir tools; cd tools; composer.phar;sudo apt-get install curl -y;curl -sS https://getcomposer.org/installer | sudo php ; chmod +x composer.phar; cp composer.phar /usr/local/bin/;clear;cd ~/"
 
