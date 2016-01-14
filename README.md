@@ -1,4 +1,4 @@
-# Dev Alias
+# Dev Alias ![Sytem Ubuntu](https://img.shields.io/badge/System-Ubuntu-orange.svg)
 
 ## Install
 
