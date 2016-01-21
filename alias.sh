@@ -17,7 +17,7 @@ alias modgit="$base/tools/modgit"
 
 # Alias Git
 alias gitst="clear;git status"
-alias resetar="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;git pull --tags;clear; magerun cache:flush;magerun cache:clean;clear;git status"
+alias resetar="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;git fetch --tags;git pull --tags;clear; magerun cache:flush;magerun cache:clean;clear;git status"
 alias limpa="resetar;resetar"
 alias gitlog="git log $logview- --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
