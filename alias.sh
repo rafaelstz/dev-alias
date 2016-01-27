@@ -9,7 +9,7 @@ alias upgrade-devalias="cd $base;rm master.zip;wget https://github.com/rafaelstz
 alias install-magerun="cd $base;mkdir tools; cd tools; rm n98-magerun.phar;wget https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/; mkdir -p ~/.n98-magerun/modules/; cd ~/.n98-magerun/modules/ && git clone https://github.com/peterjaap/magerun-addons.git ; clear; cd ~/"
 alias install-modgit="cd $base;mkdir tools; cd tools;rm modgit;wget -O modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x modgit; cp modgit /usr/local/bin/;clear;cd ~/"
 alias install-composer="cd $base;mkdir tools; cd tools; composer.phar;sudo apt-get install curl -y;curl -sS https://getcomposer.org/installer | sudo php ; chmod +x composer.phar; cp composer.phar /usr/local/bin/;clear;cd ~/"
-alias install-gitup="sudo apt-get update;sudo apt-get install gem -y; sudo gem install git-up"
+alias install-gitup="sudo apt-get update;sudo apt-get upgrade -y;sudo apt-get install rubygems-integration -y; gem --version; sudo gem install git-up"
 
 # Alias Tools
 alias magerun="$base/tools/n98-magerun.phar"
