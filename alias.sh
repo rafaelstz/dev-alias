@@ -36,7 +36,7 @@ alias gitst="clear;git status"
 alias reset="git reset --hard; git reset HEAD; git clean -df;git checkout -- . ;git pull --all;git fetch --tags;git pull --tags;clear; magerun cache:flush;magerun cache:clean;clear"
 alias limpa="reset;reset;git status"
 alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'  --date=relative"
-alias git-sync="git branch --merged | egrep -v '^\\*|master|dev|development|staging' | xargs -n 1 git branch -d  && echo '...branches synced'" #Delete local unique branches
+alias git-sync="git branch --merged | egrep -v '^\\*|master|dev|development|developer|staging' | xargs -n 1 git branch -d  && echo '...branches synced'" #Delete local unique branches
 
 # Alias Magerun
 alias n98="magerun"
