@@ -25,3 +25,9 @@ source ~/.dev-alias/alias.sh
 ```
 
   > If you use OH-MY-ZSH, paste the code on ~/.zshrc
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2015-2016 Rafael Corrêa Gomes
