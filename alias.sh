@@ -19,7 +19,8 @@ alias install-modgit="install-base; cd $base;mkdir tools; cd tools;rm modgit;wge
 alias install-composer="install-base; cd $base;mkdir tools; cd tools; composer.phar;apt-get install curl -y;curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer;clear;cd ~/"
 
 # Alias Docker
-alias docker-clean='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")' #Delete untagged images
+alias docker-clean=' docker volume rm $(docker volume ls -qf dangling=true) \
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")' #Delete untagged images
 
 # Alias Tools
 alias magerun="$base/tools/n98-magerun.phar"
