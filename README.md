@@ -30,4 +30,4 @@ source ~/.dev-alias/alias.sh
 
 The MIT License (MIT)
 
-Copyright (c) 2015-2016 Rafael Corrêa Gomes
+Copyright (c) 2015-2017 Rafael Corrêa Gomes
