@@ -30,6 +30,7 @@ alias modgit="$base/tools/modgit"
 # Alias Utilities
 alias randpass="openssl rand -base64 20"
 alias untar="tar -xvf"
+alias ip="echo `ifconfig $(netstat -nr | grep -e default -e "^0\.0\.0\.0" | head -1 | awk '{print $NF}') | grep -e "inet " | sed -e 's/.*inet //' -e 's/ .*//' -e 's/.*\://'`"
 
 # Alias Git
 alias gitst="clear;git status"
