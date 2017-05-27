@@ -38,15 +38,18 @@ alias limpa="reset;reset;git status"
 alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'  --date=relative"
 alias git-sync="git branch --merged | egrep -v '^\\*|master|dev|development|developer|staging' | xargs -n 1 git branch -d  && echo '...branches synced'" #Delete local unique branches
 
+# Alias Magento
+alias mage="php -f bin/magento"
+
 # Alias Magerun
-alias n98="magerun"
+alias m1="magerun"
+alias m2="magerun2"
 alias nt="n98 dev:template-hints"
 alias nc="n98 cache:clean;n98 cache:flush"
 alias nr="n98 index:reindex:all"
 
 # Alias System
-alias ls-l="ls -AlhF --color=auto"
-alias www="clear; cd /var/www/html/; ls -l"
+alias www="clear; cd /var/www/html/; ls"
 alias 777="chmod -Rv 777"
 alias 755="chmod -Rv 755"
 alias 644="chmod -Rv 644"
