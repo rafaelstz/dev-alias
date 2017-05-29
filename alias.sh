@@ -13,9 +13,10 @@ alias upgrade-devalias="cd $base;rm master.zip;wget https://github.com/rafaelstz
 alias install-base="sudo apt-get install -y git wget unzip"
 
 # Alias Install
-alias install-magerun="install-base; cd $base;mkdir tools; cd tools; rm n98-magerun.phar;wget https://files.magerun.net/n98-magerun.phar; chmod +x ./n98-magerun.phar; cp ./n98-magerun.phar /usr/local/bin/; mkdir -p ~/.n98-magerun/modules/; cd ~/.n98-magerun/modules/ && git clone git@github.com:kalenjordan/magerun-addons.git && git clone https://github.com/peterjaap/magerun-addons.git; git clone https://github.com/Hypernode/hypernode-magerun.git ; git clone https://github.com/steverobbins/magedownload-cli ; cd magedownload-cli ; curl -sS https://getcomposer.org/installer | php ; php composer.phar install; cd ../ ; git clone git@github.com:AOEpeople/mpmd.git ~/.n98-magerun/modules/mpmd; clear; cd ~/"
-alias install-magerun2="install-base; cd $base;mkdir tools; cd tools; rm n98-magerun2.phar;wget https://files.magerun.net/n98-magerun2.phar; chmod +x ./n98-magerun2.phar; cp ./n98-magerun2.phar /usr/local/bin/ ;clear; cd ~/"
-alias install-modgit="install-base; cd $base;mkdir tools; cd tools;rm modgit;wget -O modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x modgit; cp modgit /usr/local/bin/;clear;cd ~/"
+alias install-magerun="install-base; mkdir -p $base/tools; rm $base/tools/n98-magerun.phar;wget -O $base/tools/n98-magerun.phar https://files.magerun.net/n98-magerun.phar; chmod +x $base/tools/n98-magerun.phar; mkdir -p ~/.n98-magerun/modules/ && git clone git@github.com:kalenjordan/magerun-addons.git ~/.n98-magerun/modules/magerun-addons ; git clone https://github.com/peterjaap/magerun-addons.git ~/.n98-magerun/modules/magerun-addons2; git clone https://github.com/Hypernode/hypernode-magerun.git ~/.n98-magerun/modules/hypernode-magerun ; git clone https://github.com/steverobbins/magedownload-cli ~/.n98-magerun/modules/magedownload-cli && cd ~/.n98-magerun/modules/magedownload-cli/ && curl -sS https://getcomposer.org/installer | php && php composer.phar install; cd ../ ; git clone git@github.com:AOEpeople/mpmd.git ~/.n98-magerun/modules/mpmd; clear; cd ~/"
+alias install-magerun2="install-base; mkdir -p $base/tools; rm $base/tools/n98-magerun2.phar;wget -O $base/tools/n98-magerun2.phar https://files.magerun.net/n98-magerun2.phar; chmod +x $base/tools/n98-magerun2.phar"
+alias install-modgit="install-base; mkdir -p $base/tools; rm $base/tools/modgit;wget -O $base/tools/modgit https://raw.github.com/jreinke/modgit/master/modgit; chmod +x $base/tools/modgit"
+alias install-modman="install-base; mkdir -p $base/tools; rm $base/tools/modman;wget -O $base/tools/modman https://raw.github.com/colinmollenhour/modman/master/modman; chmod +x $base/tools/modman"
 alias install-composer="install-base; cd $base;mkdir tools; cd tools; composer.phar;apt-get install curl -y;curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer;clear;cd ~/"
 
 # Alias Docker
@@ -26,6 +27,7 @@ docker rmi $(docker images | grep "^<none>" | awk "{print $3}")' #Delete untagge
 alias magerun="$base/tools/n98-magerun.phar"
 alias magerun2="$base/tools/n98-magerun2.phar"
 alias modgit="$base/tools/modgit"
+alias modman="$base/tools/modman"
 
 # Alias Utilities
 alias randpass="openssl rand -base64 20"
