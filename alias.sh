@@ -42,7 +42,7 @@ alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cre
 alias git-sync="git branch --merged | egrep -v '^\\*|master|dev|development|developer|staging' | xargs -n 1 git branch -d  && echo '...branches synced'" #Delete local unique branches
 
 # Alias Magento
-alias mage="php -f bin/magento"
+alias mage="php -d memory_limit=-1 -f bin/magento"
 
 # Alias Magerun
 alias m1="magerun"
