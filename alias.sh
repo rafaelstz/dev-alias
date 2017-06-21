@@ -47,9 +47,9 @@ alias mage="php -d memory_limit=-1 -f bin/magento"
 # Alias Magerun
 alias m1="magerun"
 alias m2="magerun2"
-alias nt="magerun dev:template-hints"
-alias nc="magerun cache:clean;n98 cache:flush"
-alias nr="magerun index:reindex:all"
+alias nt="m1 dev:template-hints"
+alias nc="m1 cache:clean;m1 cache:flush"
+alias nr="m1 index:reindex:all"
 
 # Alias System
 alias www="clear; cd /var/www/html/; ls"
